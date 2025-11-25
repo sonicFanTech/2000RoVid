@@ -259,14 +259,10 @@
                 <h2>Retro Feedback Form</h2>
                 <p>
                     In true early-2000s fashion, here’s a classic “feedback form”.
-                    On GitHub Pages we can hook this up by sending it to a form service
-                    (see explanation below).
                 </p>
 
                 <!-- REAL FORM: replace YOUR_FORMSPREE_ENDPOINT with your actual URL -->
                 <form action="https://formspree.io/f/mzzqablg" method="POST">
-                    <input type="hidden" name="_subject" value="VidPlayer website feedback">
-                    <input type="hidden" name="_redirect" value="https://sonicfantech.github.io/2000RoVid/thanks.html">
                     <input type="hidden" name="_subject" value="VidPlayer website feedback">
                     <label for="name">Name / Handle:</label>
                     <input type="text" id="name" name="name" placeholder="your Name Here">
@@ -278,7 +274,7 @@
                     <input type="text" id="os" name="os" placeholder="Windows 7, Windows 10 IoT LTSC 2021, etc.">
 
                     <label for="version">VidPlayer version:</label>
-                    <input type="text" id="version" name="vidplayer_version" placeholder="e.g. v2.0.9-BETA-4.2-X64">
+                    <input type="text" id="version" name="vidplayer_version" placeholder="v2.0.9-BETA-4.2-X64">
 
                     <label for="message">Message (bug report, idea, or feedback):</label>
                     <textarea id="message" name="message" placeholder="Tell us what happened or what you’d like to see next..."></textarea>
@@ -322,4 +318,3 @@
 
 </body>
 </html>
-
