@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VidPlayer HQ - Classic & Modern Releases</title>
+    <meta name="description" content="Official hub for all VidPlayer releases: classic retro builds (Windows 95+) and modern Sonic Fan Tech editions.">
+    <style>
+        /* --- 2000s VIBES GLOBAL STYLES --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat; /* swap or remove this if you want */
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #cc99ff;
+        }
+
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+
+        /* --- HEADER --- */
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+
+        #logo-text {
+            color: #ffffff;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        #logo-text h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+
+        #logo-text span {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+
+        /* --- NAVBAR --- */
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+
+        #navbar li {
+            margin: 0;
+        }
+
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+
+        /* --- MAIN LAYOUT --- */
+        #content {
+            display: flex;
+            padding: 10px;
+        }
+
+        #main {
+            flex: 3;
+            margin-right: 10px;
+        }
+
+        #sidebar {
+            flex: 1;
+        }
+
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+        }
+
+        .panel h2 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 3px;
+        }
+
+        .panel h3 {
+            font-size: 14px;
+            margin: 8px 0 5px 0;
+            color: #99ffcc;
+        }
+
+        .tagline {
+            font-size: 13px;
+            color: #ccccff;
+        }
+
+        .small-note {
+            font-size: 11px;
+            color: #aaaaaa;
+        }
+
+        /* --- DOWNLOAD TABLE --- */
+        table.downloads {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+
+        table.downloads th,
+        table.downloads td {
+            border: 1px solid #333333;
+            padding: 4px 6px;
+        }
+
+        table.downloads th {
+            background: linear-gradient(#003366, #001122);
+            color: #ffffcc;
+            text-align: left;
+        }
+
+        table.downloads tr:nth-child(even) {
+            background: #151515;
+        }
+
+        table.downloads tr:nth-child(odd) {
+            background: #111111;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 1px 4px;
+            font-size: 10px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            border: 1px solid #444;
+        }
+
+        .badge-modern {
+            border-color: #66ffcc;
+            color: #66ffcc;
+        }
+
+        .badge-retro {
+            border-color: #ffcc66;
+            color: #ffcc66;
+        }
+
+        .badge-beta {
+            border-color: #ff6666;
+            color: #ff6666;
+        }
+
+        /* --- FOOTER --- */
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo-area">
+            <!-- Replace logo.png with your VidPlayer logo -->
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>“Optimised for the Year 2000… and beyond”</span>
+            </div>
+        </div>
+        <div id="header-note">
+            Best viewed at 1024×768 in Internet Explorer 6 or Netscape 7
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="content">
+        <!-- MAIN COLUMN -->
+        <div id="main">
+            <div class="panel">
+                <h2>Welcome to the VidPlayer Archive</h2>
+                <p class="tagline">
+                    This is the **official home** for <strong>all</strong> VidPlayer builds:
+                    modern Sonic Fan Tech editions and Aurora’s retro fork for Windows 95–7.
+                </p>
+                <p>
+                    If you want shiny Aero Glass and new features, grab a modern build.
+                    If you’re rocking real Windows 95/98/ME/2000/XP/7 hardware and want that
+                    authentic late-90s CD-ROM software vibe, check out the Retro Editions.
+                </p>
+                <p class="small-note">
+                    <strong>Note:</strong> Some builds are still in BETA and may explode (in a cool way).
+                    Always read the included README or manual.
+                </p>
+            </div>
+
+                </table>
+
+                <p class="small-note" style="margin-top:6px;">
+                    Looking for an older or weird build that isn’t listed?  
+                    Check the <a href="archive.html">Full Archive page</a> for every experimental version.
+                </p>
+            </div>
+
+            <div class="panel">
+
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+            <div class="panel">
+                <h2>Quick Links</h2>
+                <ul style="padding-left:16px; margin:4px 0;">
+                    <li><a href="https://github.com/sonicFanTech/vidplayer/releases/download/v2.0.9-BETA-4.2-X64/vidplayer_v2.0.9_BETA4.2_x64-N-x86.7z">Download VidPlayer</a></li>
+                    <li><a href="manuals.html">Manuals &amp; Install Guides</a></li>
+                    <li><a href="changelogs.html">Changelogs</a></li>
+                    <li><a href="https://github.com/sonicFanTech/vidplayer">Source Code (GitHub)</a></li>
+                    <li><a href="contact.html">Contact / Report a Bug</a></li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>System Requirements</h2>
+                <strong>Modern builds</strong>
+                <ul style="padding-left:16px; margin-top:4px;">
+                    <li>Windows 7 or newer (64-bit)</li>
+                    <li>512 MB RAM or more</li>
+                    <li>Python runtime bundled (no install needed)</li>
+                </ul>
+                <strong>Retro builds</strong>
+                <ul style="padding-left:16px;">
+                    <li>Windows 95 / 98 / ME / 2000 / XP / 7</li>
+                    <li>32 MB RAM (or better)</li>
+                    <li>CD-ROM or Floppy drive (for physical release)</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>Fun Stuff</h2>
+                <p class="small-note">
+                    Coming soon: classic Winamp-style skins, wallpapers, and
+                    maybe a cursed “install AOL” option for maximum 2000s energy.
+                </p>
+                <!-- You can drop in a goofy 88x31 button row here -->
+                <!-- <img src="buttons/valid-html401.gif" alt="Valid HTML 4.01"> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · Sonic Fan Tech &amp; Aurora  
+    </div>
+</div>
+
+</body>
+</html>

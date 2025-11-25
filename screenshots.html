@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VidPlayer Screenshots</title>
+    <meta name="description" content="Screenshots of VidPlayer (page under construction).">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat;
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+        a { color: #66ccff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        a:visited { color: #cc99ff; }
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+        #logo-text { color: #ffffff; text-shadow: 0 0 4px #000000; }
+        #logo-text h1 { margin: 0; font-size: 26px; letter-spacing: 2px; }
+        #logo-text span { font-size: 11px; text-transform: uppercase; }
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+        #navbar li { margin: 0; }
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+        #content { padding: 10px; }
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 20px 15px;
+            text-align: center;
+        }
+        .panel h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 5px;
+        }
+        .small-note { font-size: 11px; color: #aaaaaa; }
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="header">
+        <div id="logo-area">
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>Screenshots</span>
+            </div>
+        </div>
+        <div id="header-note">
+            Under construction – please mind the dust.
+        </div>
+    </div>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="screenshots.html" class="active">Screenshots</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="panel">
+            <h2>This page doesn’t exist yet…</h2>
+            <p>
+                The screenshots page is still being worked on.<br>
+                Once it’s ready, you’ll be able to browse screenshots of:
+            </p>
+            <p>
+                • Modern VidPlayer on Windows 7–11<br>
+                • Aurora’s Retro fork on Windows 95/98/ME/2000/XP<br>
+                • Maybe even Windows 3.1 madness 👀
+            </p>
+            <p class="small-note">
+                For now, you can still grab all versions from the
+                <a href="downloads.html">Downloads</a> page.
+            </p>
+        </div>
+    </div>
+
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · Page under construction.
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VidPlayer FAQ</title>
+    <meta name="description" content="Frequently Asked Questions about VidPlayer (page under construction).">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat;
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+        a { color: #66ccff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        a:visited { color: #cc99ff; }
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+        #logo-text { color: #ffffff; text-shadow: 0 0 4px #000000; }
+        #logo-text h1 { margin: 0; font-size: 26px; letter-spacing: 2px; }
+        #logo-text span { font-size: 11px; text-transform: uppercase; }
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+        #navbar li { margin: 0; }
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+        #content { padding: 10px; }
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 20px 15px;
+            text-align: center;
+        }
+        .panel h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 5px;
+        }
+        .small-note { font-size: 11px; color: #aaaaaa; }
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="header">
+        <div id="logo-area">
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>Frequently Asked Questions</span>
+            </div>
+        </div>
+        <div id="header-note">
+            FAQ page coming soon™.
+        </div>
+    </div>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="panel">
+            <h2>This page doesn’t exist yet…</h2>
+            <p>
+                The FAQ page is still being worked on.<br>
+                Eventually this will answer things like:
+            </p>
+            <p>
+                • “Which version should I download for my OS?”<br>
+                • “Why does VidPlayer need FFmpeg / VLC?”<br>
+                • “How do I report bugs or suggest features?”<br>
+                • “What’s the deal with the retro fork?”
+            </p>
+            <p class="small-note">
+                Until then, if you have questions, check the
+                <a href="downloads.html">Downloads</a> page or contact the devs directly.
+            </p>
+        </div>
+    </div>
+
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · FAQ is under construction.
+    </div>
+</div>
+
+</body>
+</html>

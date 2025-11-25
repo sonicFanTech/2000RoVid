@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VidPlayer Downloads - All Versions</title>
+    <meta name="description" content="Complete download archive for all VidPlayer versions: modern Sonic Fan Tech builds and Aurora's retro editions.">
+    <style>
+        /* --- 2000s VIBES GLOBAL STYLES (same as index.html) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat; /* optional */
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #cc99ff;
+        }
+
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+
+        /* --- HEADER --- */
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+
+        #logo-text {
+            color: #ffffff;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        #logo-text h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+
+        #logo-text span {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+
+        /* --- NAVBAR --- */
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+
+        #navbar li {
+            margin: 0;
+        }
+
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+
+        /* --- MAIN LAYOUT --- */
+        #content {
+            display: flex;
+            padding: 10px;
+        }
+
+        #main {
+            flex: 3;
+            margin-right: 10px;
+        }
+
+        #sidebar {
+            flex: 1;
+        }
+
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+        }
+
+        .panel h2 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 3px;
+        }
+
+        .panel h3 {
+            font-size: 14px;
+            margin: 8px 0 5px 0;
+            color: #99ffcc;
+        }
+
+        .small-note {
+            font-size: 11px;
+            color: #aaaaaa;
+        }
+
+        /* --- DOWNLOAD TABLES --- */
+        table.downloads {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        table.downloads th,
+        table.downloads td {
+            border: 1px solid #333333;
+            padding: 4px 6px;
+        }
+
+        table.downloads th {
+            background: linear-gradient(#003366, #001122);
+            color: #ffffcc;
+            text-align: left;
+        }
+
+        table.downloads tr:nth-child(even) {
+            background: #151515;
+        }
+
+        table.downloads tr:nth-child(odd) {
+            background: #111111;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 1px 4px;
+            font-size: 10px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            border: 1px solid #444;
+        }
+
+        .badge-modern {
+            border-color: #66ffcc;
+            color: #66ffcc;
+        }
+
+        .badge-retro {
+            border-color: #ffcc66;
+            color: #ffcc66;
+        }
+
+        .badge-beta {
+            border-color: #ff6666;
+            color: #ff6666;
+        }
+
+        .badge-archive {
+            border-color: #999999;
+            color: #cccccc;
+        }
+
+        /* --- FOOTER --- */
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo-area">
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>Complete Download Archive</span>
+            </div>
+        </div>
+        <div id="header-note">
+            Warning: may cause extreme nostalgia.
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html" class="active">Downloads</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN -->
+    <div id="content">
+        <div id="main">
+            <div class="panel">
+                <h2>All VidPlayer Downloads</h2>
+                <p>
+                    This page lists <strong>every</strong> public VidPlayer build from the GitHub releases,
+                    plus space for Aurora’s retro fork and extras.
+                </p>
+                <p class="small-note">
+                    Tip: if you just want something that works on a modern PC, grab the latest
+                    <strong>Modern Stable</strong> or <strong>Modern Beta</strong> at the top.
+                    Retro / very old builds are mainly for testing and nostalgia.
+                </p>
+            </div>
+
+            <!-- MODERN BUILDS (from GitHub releases) -->
+            <div class="panel" id="modern">
+                <h2>Modern Sonic Fan Tech Releases (GitHub)</h2>
+                <table class="downloads">
+                    <tr>
+                        <th>Version</th>
+                        <th>Status</th>
+                        <th>OS / Arch</th>
+                        <th>Notes</th>
+                        <th>GitHub</th>
+                    </tr>
+
+                    <!-- Latest beta -->
+                    <tr>
+                        <td>v2.0.9-BETA-4.2-X64</td>
+                        <td><span class="badge badge-beta">Beta</span> <span class="badge badge-modern">Modern</span></td>
+                        <td>Windows 7 / 8.1 / 10 / 11 (x64)</td>
+                        <td>CD ripping via FFmpeg, plus experimental VLC-based audio CD playback.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/v2.0.9-BETA-4.2-X64" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>v2.0.9-BETA-4.1-X64</td>
+                        <td><span class="badge badge-beta">Beta</span> <span class="badge badge-modern">Modern</span></td>
+                        <td>Windows 7 / 8.1 / 10 / 11 (x64)</td>
+                        <td>Fixes updater freeze at 100%, improves updater asset handling and JSON paths.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/v2.0.9-BETA-4.1-X64" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>v2.0.9-B</td>
+                        <td><span class="badge badge-beta">Beta</span> <span class="badge badge-modern">Modern</span></td>
+                        <td>Windows 7 / 8.1 / 10 / 11</td>
+                        <td>First PySide6 / Qt GUI build, new File Info window, Aero Glass theme, moved fullscreen artwork to View menu.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/v2.0.9-B" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <!-- Main stable -->
+                    <tr>
+                        <td>v2.0.8.1</td>
+                        <td><span class="badge badge-modern">Modern Stable</span></td>
+                        <td>Windows 7 / 8.1 / 10 / 11</td>
+                        <td>External artwork saved across restarts, Prev/Next in fullscreen overlay, auto-hide overlay with mouse-move wake.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/v2.0.8.1" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <!-- Older 2.x line (archive) -->
+                    <tr>
+                        <td>V2.0.4 (skipped 2.0.3)</td>
+                        <td><span class="badge badge-archive">Archive</span></td>
+                        <td>Windows 7+</td>
+                        <td>Artwork show support, settings window, early playlist + auto-play-next (buggy).</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/V2.0.4" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>v2.0.2</td>
+                        <td><span class="badge badge-archive">Archive</span></td>
+                        <td>Windows 7+</td>
+                        <td>Artwork show support, settings window, playlist support, experimental volume slider.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/v2.0.2" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>v2.0.1</td>
+                        <td><span class="badge badge-archive">Archive</span></td>
+                        <td>Windows 7+</td>
+                        <td>UI re-done again, Light/Dark mode, recent files list.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/v2.0.1" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>v2.0.0 – Re-Code</td>
+                        <td><span class="badge badge-archive">Archive</span></td>
+                        <td>Windows 7+</td>
+                        <td>First “re-coded” version – new window/UI compared to the very first build.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/update-1" target="_blank">Release page</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>v11 VERY OLD</td>
+                        <td><span class="badge badge-archive">Very old</span></td>
+                        <td>Windows (unspecified)</td>
+                        <td>First ever VidPlayer build. Missing tons of stuff – mainly here for history.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/Audio-player" target="_blank">Release page</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- RETRO BUILDS (Aurora fork placeholders) -->
+            <div class="panel" id="retro">
+                <h2>Aurora’s Retro Fork (Win95–7 / Win3.1)</h2>
+
+                <h3>CD-ROM Style Editions (Win95–7)</h3>
+                <table class="downloads">
+                    <tr>
+                        <th>Version</th>
+                        <th>Status</th>
+                        <th>Target OS</th>
+                        <th>Media</th>
+                        <th>Notes</th>
+                        <th>Download</th>
+                    </tr>
+                    <tr>
+                        <td>VidPlayer Retro BETA 4.2</td>
+                        <td><span class="badge badge-beta">Beta</span> <span class="badge badge-retro">Retro</span></td>
+                        <td>Win95 / 98 / NT / ME / 2000 / XP / 7</td>
+                        <td>CD ISO (setup.exe, manual, software box)</td>
+                        <td>Reprogrammed core, CD support, Aero-style effects on Windows 7.</td>
+                        <td><em>Coming soon (CD / ISO)</em></td>
+                    </tr>
+                </table>
+
+                <h3>Windows 3.1 Shareware</h3>
+                <table class="downloads">
+                    <tr>
+                        <th>Version</th>
+                        <th>Status</th>
+                        <th>Target OS</th>
+                        <th>Media</th>
+                        <th>Notes</th>
+                        <th>Download</th>
+                    </tr>
+                    <tr>
+                        <td>VidPlayer Retro for Windows 3.1</td>
+                        <td><span class="badge badge-retro">Shareware</span></td>
+                        <td>Windows 3.1 + Win32s</td>
+                        <td>Floppy disk image</td>
+                        <td>MIDI-only support, ultra-compressed MP3s planned.</td>
+                        <td><em>Coming soon (floppy image)</em></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- SOURCE -->
+            <div class="panel" id="source">
+                <h2>Source Code</h2>
+                <p>
+                    VidPlayer is open source. If you want to fork it, make your own builds, or just peek at how it works, start here:
+                </p>
+                <table class="downloads">
+                    <tr>
+                        <th>Repo / Snapshot</th>
+                        <th>Type</th>
+                        <th>Notes</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>GitHub Repository</td>
+                        <td>Online repo</td>
+                        <td>Latest code, issues, and development history.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer" target="_blank">Open on GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td>Source ZIP for latest beta</td>
+                        <td>ZIP</td>
+                        <td>From the <strong>Assets</strong> section of the 2.0.9-BETA-4.2-X64 release.</td>
+                        <td><a href="https://github.com/sonicFanTech/vidplayer/releases/tag/v2.0.9-BETA-4.2-X64" target="_blank">Get from release page</a></td>
+                    </tr>
+                </table>
+                <p class="small-note">
+                    Remember to follow the LICENSE rules about credits, forks, and redistribution.
+                </p>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+            <div class="panel">
+                <h2>Download Tips</h2>
+                <ul style="padding-left:16px; margin:4px 0;">
+                    <li>Modern PC? Use a <strong>Modern Stable</strong> or the newest <strong>Beta</strong>.</li>
+                    <li>Real retro hardware? Pick from the <strong>Retro</strong> section.</li>
+                    <li>Dev / archivist? Check the <strong>Archive</strong> and <strong>Very old</strong> rows.</li>
+                    <li>Need code? Scroll to <strong>Source Code</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>Legend</h2>
+                <p class="small-note">
+                    <span class="badge badge-modern">Modern</span> – Current Sonic Fan Tech builds<br>
+                    <span class="badge badge-retro">Retro</span> – Aurora’s old-OS compatible fork<br>
+                    <span class="badge badge-beta">Beta</span> – Experimental / testing builds<br>
+                    <span class="badge badge-archive">Archive</span> – Old, kept for history
+                </p>
+            </div>
+
+            <div class="panel">
+                <h2>Having Issues?</h2>
+                <p class="small-note">
+                    Check the <a href="faq.html">FAQ</a> first.<br>
+                    If it still explodes, send a bug report via the
+                    <a href="contact.html">Contact</a> page with your OS, VidPlayer version,
+                    and what you were doing when it broke.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · Sonic Fan Tech &amp; Aurora · All product names are used for fun, not for profit.
+    </div>
+</div>
+
+</body>
+</html>
