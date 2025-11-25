@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VidPlayer Changelogs</title>
+    <meta name="description" content="Full feature, update, and fixes log for all VidPlayer versions.">
+    <style>
+        /* --- GLOBAL 2000s STYLE --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat;
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #cc99ff;
+        }
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+
+        /* HEADER */
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+        #logo-text {
+            color: #ffffff;
+            text-shadow: 0 0 4px #000000;
+        }
+        #logo-text h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+        #logo-text span {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+
+        /* NAVBAR */
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+        #navbar li { margin: 0; }
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+
+        /* CONTENT */
+        #content {
+            display: flex;
+            padding: 10px;
+        }
+        #main {
+            flex: 3;
+            margin-right: 10px;
+        }
+        #sidebar {
+            flex: 1;
+        }
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+        }
+        .panel h2 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 3px;
+        }
+        .panel h3 {
+            font-size: 14px;
+            margin: 10px 0 3px 0;
+            color: #99ffcc;
+        }
+        .version-tag {
+            font-size: 11px;
+            color: #ccccff;
+        }
+        .small-note {
+            font-size: 11px;
+            color: #aaaaaa;
+        }
+        ul {
+            padding-left: 18px;
+        }
+
+        /* FOOTER */
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo-area">
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>Features / Update / Fixes Log</span>
+            </div>
+        </div>
+        <div id="header-note">
+            Every tweak, hack, and feature – in one place.
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="content">
+        <!-- MAIN -->
+        <div id="main">
+            <div class="panel">
+                <h2>Features / Update / Fixes Log</h2>
+                <p class="small-note">
+                    Newest versions are at the top. Some older versions were buggy / internal but are
+                    listed here for history.
+                </p>
+
+                <!-- v2.0.9 BETA 4.2 -->
+                <h3>v2.0.9 BETA 4.2</h3>
+                <p class="version-tag">Experimental CD support + ripping</p>
+                <ul>
+                    <li>Added experimental <strong>Audio CD support</strong> and ripping.</li>
+                    <li>New CD rip window that shows the current track and basic progress while ripping.</li>
+                    <li>Uses external tools (cdda2wav + FFmpeg) to rip CD tracks into a temp folder next to the EXE and convert them to normal audio files.</li>
+                    <li>Ripped tracks are added into the playlist so they can be played like any other file.</li>
+                    <li>Misc bug fixes &amp; tweaks around playlists / drag &amp; drop while ripping CDs.</li>
+                </ul>
+
+                <!-- v2.0.9 BETA 4.1 -->
+                <h3>v2.0.9 BETA 4.1</h3>
+                <p class="version-tag">Updater + assets + paths</p>
+                <ul>
+                    <li>Fix: updater freeze/crash at 100% (safe thread cleanup).</li>
+                    <li>Enhancement: updater can download <strong>any</strong> asset type (no extension filtering).</li>
+                    <li>Fix: JSON files now created next to the EXE when compiled (PyInstaller-safe paths).</li>
+                    <li>Enhancement: drag &amp; drop + multi-open now uses a small progress dialog, adds files one-at-a-time in a background thread, and auto-closes when finished.</li>
+                    <li>First VidPlayer version to have both <strong>x64 &amp; x86</strong> builds.</li>
+                </ul>
+
+                <!-- v2.0.9 BETA 4 -->
+                <h3>v2.0.9 BETA 4</h3>
+                <p class="version-tag">Qt polish + updater return</p>
+                <ul>
+                    <li>Enable Aero checkbox is grayed out unless theme = Aero.</li>
+                    <li>Full Screen Artwork moved to View menu (kept from earlier changes).</li>
+                    <li>Re-added update downloader with progress.</li>
+                    <li>Fix: cleaned up Qt stylesheet unsupported properties.</li>
+                    <li>Fix: Save/Load <code>QAction</code> triggers.</li>
+                </ul>
+
+                <!-- v2.0.9 BETA 2–3 -->
+                <h3>v2.0.9 BETA 2–3</h3>
+                <p class="version-tag">Internal / no public log</p>
+                <ul>
+                    <li>No public update / fix log – internal experimental builds.</li>
+                </ul>
+
+                <!-- v2.0.9 BETA 1 -->
+                <h3>v2.0.9 BETA 1</h3>
+                <p class="version-tag">New GUI + Aero Glass theme</p>
+                <ul>
+                    <li>Replaced GUI toolkit from <strong>tkinter</strong> to <strong>PySide6 (Qt)</strong>.</li>
+                    <li>Note: new GUI was mainly tested on Windows 11 (may not behave perfectly on Windows 10).</li>
+                    <li>Added new <strong>File Info</strong> tool in the Tools menu:
+                        shows file name, type/extension, size, path, creation date/time, artist, album, year, track length,
+                        bitrate, copyright, and artwork status.
+                    </li>
+                    <li>Moved Full Screen artwork from Tools menu → View menu (right below Playlist); shortcut keys unchanged.</li>
+                    <li>Added new theme <strong>Aero Glass</strong> made to look like Windows 7’s Aero glass effects.</li>
+                </ul>
+
+                <!-- v2.0.8.1 -->
+                <h3>v2.0.8.1</h3>
+                <p class="version-tag">Fullscreen overlay improvements</p>
+                <ul>
+                    <li>Added external artwork persistence across restarts (saved to <code>artmap.json</code>).</li>
+                    <li>Added Prev / Next buttons in the fullscreen overlay.</li>
+                    <li>Overlay auto-hides after a few seconds of inactivity and reappears on mouse move.</li>
+                    <li>Still keeps the “choose external artwork when embedded is missing” flow, but now it saves the choice immediately.</li>
+                </ul>
+
+                <!-- v2.0.8 -->
+                <h3>v2.0.8</h3>
+                <p class="version-tag">Discord RPC + fullscreen mode</p>
+                <ul>
+                    <li>Added Discord Rich Presence toggle in Settings (enables/disables RPC at runtime).</li>
+                    <li>App now holds a single presence connection and the Playlist window uses it.</li>
+                    <li>Added “Always on Top” setting in Settings.</li>
+                    <li>Added Full Screen entry to the Tools menu: opens fullscreen to show artwork prominently.</li>
+                    <li>Fullscreen supports:
+                        Escape to exit, clicking artwork to play/pause, filename label, and close button.
+                    </li>
+                    <li>All new settings saved to <code>CONFIG_FILE</code> and loaded at startup.</li>
+                </ul>
+
+                <!-- v2.0.7 -->
+                <h3>v2.0.7</h3>
+                <p class="version-tag">Discord RPC initial</p>
+                <ul>
+                    <li>Added Discord RPC.</li>
+                    <li>Changed default volume to 50.0 (buggy).</li>
+                </ul>
+
+                <!-- v2.0.6.1 -->
+                <h3>v2.0.6.1</h3>
+                <p class="version-tag">Update system + external log text</p>
+                <ul>
+                    <li>Updated the License Agreement.</li>
+                    <li>Made the License and Features / Update Log tab load text from a file (no code needed for that text).</li>
+                    <li>Added auto-check-for-updates feature at startup.</li>
+                    <li>Added “Check for updates” button to the About menu.</li>
+                </ul>
+
+                <!-- v2.0.6 -->
+                <h3>v2.0.6</h3>
+                <p class="version-tag">New About window</p>
+                <ul>
+                    <li>Added the new About window.</li>
+                </ul>
+
+                <!-- v2.0.5 -->
+                <h3>v2.0.5</h3>
+                <p class="version-tag">Progress loading window</p>
+                <ul>
+                    <li>Added a progress loading window that shows only when you open more than 10 files (bug: doesn’t always show).</li>
+                </ul>
+
+                <!-- v2.0.4 -->
+                <h3>v2.0.4</h3>
+                <p class="version-tag">Playlist improvements</p>
+                <ul>
+                    <li>Fixed auto-play next file in playlist feature.</li>
+                    <li>Added more settings to the Settings window.</li>
+                </ul>
+
+                <!-- v2.0.3 -->
+                <h3>v2.0.3 (unreleased)</h3>
+                <p class="version-tag">Internal build only</p>
+                <ul>
+                    <li>Added auto-play next file in playlist feature, but the build was not working and was never released publicly.</li>
+                </ul>
+
+                <!-- v2.0.2 -->
+                <h3>v2.0.2</h3>
+                <p class="version-tag">Artwork + settings + playlist</p>
+                <ul>
+                    <li>Added artwork show support.</li>
+                    <li>Added a Settings window.</li>
+                    <li>Changed how the volume slider works (broke it).</li>
+                    <li>Added playlist support.</li>
+                </ul>
+
+                <!-- v2.0.1 -->
+                <h3>v2.0.1</h3>
+                <p class="version-tag">UI refresh + theming</p>
+                <ul>
+                    <li>Player UI re-done again.</li>
+                    <li>Added Light/Dark mode feature.</li>
+                    <li>Added Recent Files feature.</li>
+                </ul>
+
+                <!-- v2.0.0 -->
+                <h3>v2.0.0 – Re-Code</h3>
+                <p class="version-tag">Core rewrite</p>
+                <ul>
+                    <li>Program rewritten in <strong>Python 3.12+</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+            <div class="panel">
+                <h2>Related pages</h2>
+                <ul style="padding-left:16px; margin:4px 0;">
+                    <li><a href="downloads.html">Downloads (all versions)</a></li>
+                    <li><a href="about.html">About / Credits</a></li>
+                    <li><a href="contact.html">Contact / Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>Notes</h2>
+                <p class="small-note">
+                    • “Buggy” notes mean the feature existed, but had known issues.<br>
+                    • Some internal / beta builds never got public releases but are listed for history.<br>
+                    • Newer builds may change or remove older features.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · Sonic Fan Tech &amp; Aurora · Changelog page.
+    </div>
+</div>
+
+</body>
+</html>
