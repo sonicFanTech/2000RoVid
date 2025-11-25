@@ -83,9 +83,7 @@
             display: flex;
             gap: 6px;
         }
-        #navbar li {
-            margin: 0;
-        }
+        #navbar li { margin: 0; }
         #navbar a {
             display: block;
             padding: 4px 10px;
@@ -140,7 +138,7 @@
             padding-left: 18px;
         }
 
-        /* FORM (purely visual for now) */
+        /* FORM */
         form {
             margin-top: 8px;
         }
@@ -231,9 +229,18 @@
 
                 <h3>Email</h3>
                 <p>
-                    For general questions, bug reports and feature requests:<br>
+                    <strong>sonic Fan Tech / sonic Fan Games</strong><br>
                     <strong>Email:</strong>
                     <a href="mailto:sonicfan1348@gmail.com">sonicfan1348@gmail.com</a>
+                </p>
+
+                <h3>Discord</h3>
+                <ul>
+                    <li><strong>sonic Fan Tech:</strong> <code>sonic_fan_games</code></li>
+                    <li><strong>Aurora:</strong> <code>aurora613</code></li>
+                </ul>
+                <p class="small-note">
+                    You can DM either of those accounts about VidPlayer, bugs, ideas, or the retro fork.
                 </p>
 
                 <h3>GitHub</h3>
@@ -246,24 +253,19 @@
                 <p class="small-note">
                     Please include your Windows version, VidPlayer version, and what you did right before it broke.
                 </p>
-
-                <h3>Discord</h3>
-                <p class="small-note">
-                    If you know the devs from Discord, you can DM them there as well.  
-                    (A public server / invite link might be added here later.)
-                </p>
             </div>
 
             <div class="panel">
-                <h2>Retro Feedback Form (not wired up yet)</h2>
+                <h2>Retro Feedback Form</h2>
                 <p>
                     In true early-2000s fashion, here’s a classic “feedback form”.
-                    On this version of the site it’s just for show –
-                    use the email or GitHub links above to actually send stuff.
+                    On GitHub Pages we can hook this up by sending it to a form service
+                    (see explanation below).
                 </p>
 
-                <!-- purely visual form; action is a no-op -->
-                <form action="mailto:sonicfan1348@gmail.com" method="post" enctype="text/plain">
+                <!-- REAL FORM: replace YOUR_FORMSPREE_ENDPOINT with your actual URL -->
+                <form action="https://formspree.io/f/mzzqablg" method="POST">
+                    <input type="hidden" name="_subject" value="VidPlayer website feedback">
                     <label for="name">Name / Handle:</label>
                     <input type="text" id="name" name="name" placeholder="Ralsei, Aurora, sonic Fan Tech, etc.">
 
@@ -279,12 +281,12 @@
                     <label for="message">Message (bug report, idea, or feedback):</label>
                     <textarea id="message" name="message" placeholder="Tell us what happened or what you’d like to see next..."></textarea>
 
-                    <input type="submit" value="Send (via mail client)">
+                    <input type="submit" value="Send Feedback">
                 </form>
 
                 <p class="small-note">
-                    Submitting the form will open your email client (Outlook, etc.) using <code>mailto:</code>.  
-                    If nothing happens, just copy your text and email it manually.
+                    This form uses a third-party form service so it can work on GitHub Pages.<br>
+                    Don’t forget to swap <code>YOUR_FORMSPREE_ENDPOINT</code> with your real endpoint (see below).
                 </p>
             </div>
         </div>
