@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact the VidPlayer Team</title>
+    <meta name="description" content="Contact information for VidPlayer – bug reports, feature requests, and general questions.">
+    <style>
+        /* --- GLOBAL 2000s STYLE --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat;
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #cc99ff;
+        }
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+
+        /* HEADER */
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+        #logo-text {
+            color: #ffffff;
+            text-shadow: 0 0 4px #000000;
+        }
+        #logo-text h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+        #logo-text span {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+
+        /* NAVBAR */
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+        #navbar li {
+            margin: 0;
+        }
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+
+        /* LAYOUT */
+        #content {
+            display: flex;
+            padding: 10px;
+        }
+        #main {
+            flex: 3;
+            margin-right: 10px;
+        }
+        #sidebar {
+            flex: 1;
+        }
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+        }
+        .panel h2 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 3px;
+        }
+        .panel h3 {
+            font-size: 14px;
+            margin: 8px 0 5px 0;
+            color: #99ffcc;
+        }
+        .small-note {
+            font-size: 11px;
+            color: #aaaaaa;
+        }
+        ul {
+            padding-left: 18px;
+        }
+
+        /* FORM (purely visual for now) */
+        form {
+            margin-top: 8px;
+        }
+        label {
+            display: block;
+            margin-top: 6px;
+            font-size: 12px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            background: #050a10;
+            color: #e0e0e0;
+            border: 1px solid #004466;
+            padding: 4px;
+            font-family: inherit;
+            font-size: 13px;
+        }
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 5px 14px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #00ccff;
+            background: linear-gradient(#001122, #003355);
+            color: #ffffff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: linear-gradient(#003355, #001122);
+        }
+
+        /* FOOTER */
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo-area">
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>Contact / Bug Reports</span>
+            </div>
+        </div>
+        <div id="header-note">
+            Questions? Bugs? Feature ideas? Send ’em here.
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="content">
+        <!-- MAIN -->
+        <div id="main">
+            <div class="panel">
+                <h2>How to contact the VidPlayer devs</h2>
+                <p>
+                    If you found a bug, have an idea, or just want to say “this is sick”,
+                    you can reach the VidPlayer team using any of the methods below.
+                </p>
+
+                <h3>Email</h3>
+                <p>
+                    For general questions, bug reports and feature requests:<br>
+                    <strong>Email:</strong>
+                    <a href="mailto:sonicfan1348@gmail.com">sonicfan1348@gmail.com</a>
+                </p>
+
+                <h3>GitHub</h3>
+                <p>
+                    If you have a GitHub account, the best way to report bugs is by opening an issue:
+                </p>
+                <ul>
+                    <li><a href="https://github.com/sonicFanTech/vidplayer/issues" target="_blank">Open an issue on the VidPlayer repo</a></li>
+                </ul>
+                <p class="small-note">
+                    Please include your Windows version, VidPlayer version, and what you did right before it broke.
+                </p>
+
+                <h3>Discord</h3>
+                <p class="small-note">
+                    If you know the devs from Discord, you can DM them there as well.  
+                    (A public server / invite link might be added here later.)
+                </p>
+            </div>
+
+            <div class="panel">
+                <h2>Retro Feedback Form (not wired up yet)</h2>
+                <p>
+                    In true early-2000s fashion, here’s a classic “feedback form”.
+                    On this version of the site it’s just for show –
+                    use the email or GitHub links above to actually send stuff.
+                </p>
+
+                <!-- purely visual form; action is a no-op -->
+                <form action="mailto:sonicfan1348@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name / Handle:</label>
+                    <input type="text" id="name" name="name" placeholder="Ralsei, Aurora, sonic Fan Tech, etc.">
+
+                    <label for="email">Email (optional):</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
+
+                    <label for="os">Windows version:</label>
+                    <input type="text" id="os" name="os" placeholder="Windows 7, Windows 10 IoT LTSC 2021, etc.">
+
+                    <label for="version">VidPlayer version:</label>
+                    <input type="text" id="version" name="vidplayer_version" placeholder="e.g. v2.0.9-BETA-4.2-X64">
+
+                    <label for="message">Message (bug report, idea, or feedback):</label>
+                    <textarea id="message" name="message" placeholder="Tell us what happened or what you’d like to see next..."></textarea>
+
+                    <input type="submit" value="Send (via mail client)">
+                </form>
+
+                <p class="small-note">
+                    Submitting the form will open your email client (Outlook, etc.) using <code>mailto:</code>.  
+                    If nothing happens, just copy your text and email it manually.
+                </p>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+            <div class="panel">
+                <h2>Before you send a bug...</h2>
+                <ul style="padding-left:16px; margin:4px 0;">
+                    <li>Check you’re on the latest version (see <a href="downloads.html">Downloads</a>).</li>
+                    <li>Try a different audio file to see if it’s file-specific.</li>
+                    <li>Note any error messages or weird behaviour.</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>Quick Links</h2>
+                <ul style="padding-left:16px; margin:4px 0;">
+                    <li><a href="downloads.html">Download all versions</a></li>
+                    <li><a href="https://github.com/sonicFanTech/vidplayer" target="_blank">VidPlayer on GitHub</a></li>
+                    <li><a href="about.html">About / Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · Sonic Fan Tech &amp; Aurora · Thanks for playing with our weird audio player.
+    </div>
+</div>
+
+</body>
+</html>
