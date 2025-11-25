@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VidPlayer Manuals &amp; Install Guides</title>
+    <meta name="description" content="Manuals and install guides for VidPlayer (page under construction).">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat;
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+        a { color: #66ccff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        a:visited { color: #cc99ff; }
+
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+
+        /* HEADER */
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+        #logo-text { color: #ffffff; text-shadow: 0 0 4px #000000; }
+        #logo-text h1 { margin: 0; font-size: 26px; letter-spacing: 2px; }
+        #logo-text span { font-size: 11px; text-transform: uppercase; }
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+
+        /* NAVBAR */
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+        #navbar li { margin: 0; }
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+
+        /* CONTENT */
+        #content { padding: 10px; }
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 20px 15px;
+            text-align: center;
+        }
+        .panel h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 5px;
+        }
+        .small-note { font-size: 11px; color: #aaaaaa; }
+
+        /* FOOTER */
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo-area">
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>Manuals &amp; Install Guides</span>
+            </div>
+        </div>
+        <div id="header-note">
+            Documentation coming soon™.
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="content">
+        <div class="panel">
+            <h2>This page doesn’t exist yet…</h2>
+            <p>
+                The <strong>Manuals &amp; Install Guides</strong> page is still being worked on.
+            </p>
+            <p>
+                Once it’s ready, you’ll find things like:
+            </p>
+            <p>
+                • Step-by-step install guides for each VidPlayer version<br>
+                • Instructions for running the Retro fork on Windows 95–XP and 3.1<br>
+                • Info about physical CDs, floppies, and box/manual stuff
+            </p>
+            <p class="small-note">
+                For now, if you need help installing VidPlayer, check the
+                <a href="downloads.html">Downloads</a> page or contact the devs directly.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · Manuals &amp; guides are under construction.
+    </div>
+</div>
+
+</body>
+</html>
