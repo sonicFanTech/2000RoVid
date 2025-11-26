@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VidPlayer archive</title>
+    <meta name="description" content="Complete download archive for all VidPlayer versions: modern Sonic Fan Tech builds and Aurora's retro editions.">
+    <style>
+        /* --- 2000s VIBES GLOBAL STYLES (same as index.html) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000 url("bg-stars.gif") repeat; /* optional */
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #cc99ff;
+        }
+
+        #wrapper {
+            width: 900px;
+            margin: 20px auto 40px auto;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 25px #00ccff;
+            background: #101010 url("bg-grid.png");
+        }
+
+        /* --- HEADER --- */
+        #header {
+            background: linear-gradient(90deg, #003366, #006699, #0099cc);
+            border-bottom: 2px solid #00ccff;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        #logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #logo-area img {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+
+        #logo-text {
+            color: #ffffff;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        #logo-text h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+
+        #logo-text span {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        #header-note {
+            position: absolute;
+            right: 15px;
+            bottom: 8px;
+            font-size: 11px;
+            color: #ffffaa;
+        }
+
+        /* --- NAVBAR --- */
+        #navbar {
+            background: #000022;
+            border-bottom: 1px solid #00ccff;
+            padding: 4px 10px;
+        }
+
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 6px;
+        }
+
+        #navbar li {
+            margin: 0;
+        }
+
+        #navbar a {
+            display: block;
+            padding: 4px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: 1px solid #004466;
+            background: linear-gradient(#001122, #002244);
+        }
+
+        #navbar a.active {
+            border-color: #ffff66;
+            background: linear-gradient(#004466, #001122);
+            color: #ffff99;
+            font-weight: bold;
+        }
+
+        /* --- MAIN LAYOUT --- */
+        #content {
+            display: flex;
+            padding: 10px;
+        }
+
+        #main {
+            flex: 3;
+            margin-right: 10px;
+        }
+
+        #sidebar {
+            flex: 1;
+        }
+
+        .panel {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #004466;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+        }
+
+        .panel h2 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            color: #ffff99;
+            text-shadow: 0 0 3px #000000;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 3px;
+        }
+
+        .panel h3 {
+            font-size: 14px;
+            margin: 8px 0 5px 0;
+            color: #99ffcc;
+        }
+
+        .small-note {
+            font-size: 11px;
+            color: #aaaaaa;
+        }
+
+        /* --- DOWNLOAD TABLES --- */
+        table.downloads {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        table.downloads th,
+        table.downloads td {
+            border: 1px solid #333333;
+            padding: 4px 6px;
+        }
+
+        table.downloads th {
+            background: linear-gradient(#003366, #001122);
+            color: #ffffcc;
+            text-align: left;
+        }
+
+        table.downloads tr:nth-child(even) {
+            background: #151515;
+        }
+
+        table.downloads tr:nth-child(odd) {
+            background: #111111;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 1px 4px;
+            font-size: 10px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            border: 1px solid #444;
+        }
+
+        .badge-modern {
+            border-color: #66ffcc;
+            color: #66ffcc;
+        }
+
+        .badge-retro {
+            border-color: #ffcc66;
+            color: #ffcc66;
+        }
+
+        .badge-beta {
+            border-color: #ff6666;
+            color: #ff6666;
+        }
+
+        .badge-archive {
+            border-color: #999999;
+            color: #cccccc;
+        }
+
+        /* --- FOOTER --- */
+        #footer {
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            color: #888888;
+            background: #000010;
+            border-top: 1px solid #003344;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo-area">
+            <img src="logo.png" alt="VidPlayer Logo">
+            <div id="logo-text">
+                <h1>VidPlayer HQ</h1>
+                <span>Archive</span>
+            </div>
+        </div>
+        <div id="header-note">
+            
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About / Credits</a></li>
+			<li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN -->
+    <div id="content">
+        <div id="main">
+            <div class="panel">
+                <p>
+                    This page lists <strong>every</strong> Weird build of vidplaer that isn't on GitHub.
+                </p>
+            </div>
+
+            <!-- MODERN BUILDS (from GitHub releases) -->
+            <div class="panel" id="modern">
+                <h2>Archive</h2>
+                <table class="downloads">
+                    <tr>
+                        <th>Version</th>
+                        <th>OS / Arch</th>
+                        <th>Notes</th>
+						<th>Download</th>
+                    </tr>
+
+                </table>
+            </div>
+
+There's No Builds Here at this time, Sorry :[
+
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+            </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        &copy; 2000–2025 VidPlayer Team · Sonic Fan Tech &amp; Aurora · Weird Builds of Vidplayer.
+    </div>
+</div>
+
+</body>
+</html>
